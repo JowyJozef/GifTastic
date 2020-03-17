@@ -1,14 +1,13 @@
 $(document).ready(function () {
     populateButtons(searchArray, 'searchButton', '#buttonsArea')
-
 });
 
-var searchArray = ["dog", "cat", "bird", "cow", "horse"];
+var searchArray = ["Anime", "Excited", "Funny", "Dance", "DBZ"];
 
 function populateButtons(searchArray, classToAdd, areaToAddTo) {
     $(areaToAddTo).empty();
     for (var i = 0; i < searchArray.length; i++) {
-        var a = $('<button class="btn btn-danger" style="margin:1%; background-color:rgb(221, 94, 116); border:none">');
+        var a = $('<button class="btn btn-danger" style="margin:1%; background-color:rgb(255, 5, 130);; border:none">');
         a.addClass(classToAdd);
         a.attr('data-type', searchArray[i]);
         a.text(searchArray[i]);
